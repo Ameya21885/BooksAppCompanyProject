@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooksApp</title>
+
+   
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!--  -->
+
+
+
+
+
+</head>
+<body>
+    <!--    -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="#">
+      <img src="logo1.jpg" alt="" class="rounded-circle" width="40" height="40" > <b> BooksApp </b> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        
+<!-- switch -->
+<!-- <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="togleStyle">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
+</div> -->
+
+
+
+
+<!--  -->
+
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- alert -->
+ <div class="alert alert-warning alert-dismissible fade show    d-grid gap-2" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+
+
+
+
+
+
+<!-- carousel -->
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/img1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/img2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/img3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+<!--  -->
+
+
+
+
+
+
+
+
+
+<!-- services -->
+
+<h3 class="d-flex justify-content-center mt-5 pt-5 pb-5 mb-5">
+  Fancy display heading
+  <small class="text-muted"> With faded secondary text</small>
+</h3>
+
+
+
+<div class="d-flex justify-content-evenly mt-5 pt-5 pb-5 mb-5">
+
+  <span class="border-end border-3 border-dark  mx-5 me-2">
+    <img src="img/pro1.jpg" alt="" sizes="451x375" srcset="">
+    <h6><small class="text-muted">CATEGORY</small></h6><h5>Raclette Blueberry Nextious Level</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non soluta deserunt laborum laboriosam, id eum rem, delectus molestias debitis dignissimos quaerat impedit inventore nisi?</p>
+  </span>
+
+  <span class="border-end border-3 border-dark mx-5 me-2">
+    <img src="img/pro3.jpg" alt="" sizes="50x50" srcset="">
+    <h6><small class="text-muted">CATEGORY</small></h6><h5>Ennui Snackwave Thundercats</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non soluta deserunt laborum laboriosam, id eum rem, delectus molestias debitis dignissimos quaerat impedit inventore nisi?</p>
+  </span>
+
+  <span class="mx-5 me-2">
+    <img src="img/pro2.jpg" alt="" sizes="50x50" srcset="">
+    <h6><small class="text-muted">CATEGORY</small></h6><h5>Selvage Poke Waistcoat Godard</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non soluta deserunt laborum laboriosam, id eum rem, delectus molestias debitis dignissimos quaerat impedit inventore nisi?</p>
+  </span>
+
+</div>
+
+
+
+<!--  -->
+
+
+
+<!-- -->
+<div class="d-flex justify-content-center mt-5 pt-5 pb-5 mb-5">
+
+  <span class="border-end border-3 border-dark mx-5 me-2">
+    <img src="img/profit1.jpg" alt="" sizes="451x375" srcset="">
+    <h6><small class="text-muted">CATEGORY</small></h6><h5>Raclette Blueberry Nextious Level</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non soluta deserunt laborum laboriosam, id eum rem, delectus molestias debitis dignissimos quaerat impedit inventore nisi?</p>
+  </span>
+
+  <span class="mx-5 me-2">
+    <img src="img/profit2.jpg" alt="" sizes="451x375" srcset="">
+    <h6><small class="text-muted">CATEGORY</small></h6><h5>Raclette Blueberry Nextious Level</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non soluta deserunt laborum laboriosam, id eum rem, delectus molestias debitis dignissimos quaerat impedit inventore nisi?</p>
+  </span>
+
+</div>
+
+<div class="d-flex justify-content-center mt-5 pt-5 pb-5 mb-5">
+  
+  <span class="border-end border-3 border-dark border-bottom mx-5 me-2">
+    <img src="img/profit3.jpg" alt="" sizes="451x375" srcset="">
+    <h6><small class="text-muted">CATEGORY</small></h6><h5>Raclette Blueberry Nextious Level</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non soluta deserunt laborum laboriosam, id eum rem, delectus molestias debitis dignissimos quaerat impedit inventore nisi?</p>
+  </span>
+
+ <span class="border-bottom border-3 border-dark mx-5 me-2">
+  <img src="img/profit4.jpg" alt="" sizes="451x375" srcset="">
+  <h6><small class="text-muted">CATEGORY</small></h6><h5>Raclette Blueberry Nextious Level</h5>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non soluta deserunt laborum laboriosam, id eum rem, delectus molestias debitis dignissimos quaerat impedit inventore nisi?</p>
+ </span>
+
+</div>
+
+
+
+
+
+
+<!--  -->
+<div>
+
+<div class="d-flex justify-content-center mt-5 pt-5 pb-5 mb-5">
+ 
+  <span class="border-end border-3 border-dark border-bottom mx-5 me-2">
+    <img src="img/boss.jpg" alt="" sizes="451x375" srcset="">
+    <h6><small class="text-muted">HR</small></h6><h5>Raclette Blueberry</h5>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non soluta deserunt laborum laboriosam, id eum rem, delectus molestias debitis dignissimos quaerat impedit inventore nisi?</p>
+  </span>
+
+
+   <!-- sign Up page -->
+   <span class="border-end border-3 border-dark border-bottom mx-5 me-2">
+ 
+   <!-- sign Up page -->
+   <div class="mt-3 ms-3 me-3 mx-3 my-3 pt-3 ps-3 pe-3 px-3 py-3 ">
+
+
+
+    <h3>Conect With Us by Signing Up this page</h3>
+
+    
+        <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary mt-5 ms-4 me-4 mx-4 my-4 pt-3 ps-3 pe-3 px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Sign Up
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">  Welcome to the Sign Up page</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!--  -->
+    
+            <form>
+              <div id="emailHelp" class="form-text">We'll never share your Details with anyone else.</div>
+    
+    
+              <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Name</label>
+                <input type="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+    
+              <div class="mb-3">
+                <label for="exampleInputDateOfBirth" class="form-label">DOB</label>
+                <h4 class="form-text"><small>Date of Birth must be of type: DayMonthYear <br> e.g. 15042002</small></h4>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+    
+    
+    
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="col-auto">
+                  <span id="passwordHelpInline" class="form-text">
+                    Must be 8-20 characters long.
+                  </span>
+                </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    <!--  -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Clear Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <!--  -->
+    </div>
+    </span>
+    
+  </div> 
+
+
+
+
+
+<!-- ------------------------------------------------ -->
+<!-- fetch api button -->
+<div class="container">
+  <h4>Student List</h4>
+  <button id="myBtn" class="btn btn-primary">Your Button</button>
+  <button class="btn btn-primary">Fetch Data</button>
+
+<div id="content">
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+
+<div class="d-flex justify-content-evenly  border border-bottom border-top-0 border-dark border-4 rounded-pill rounded-3">
+
+  <div class="d-flex flex-row bd-highlight mb-3">
+    <div class="p-2 bd-highlight"><img src="logo1.jpg" alt="" width="5%" class="border border-dark border-3 rounded-circle"><b> BookApp </b></div>
+    <div class="p-2 bd-highlight">Flex item 2</div>
+    <div class="p-2 bd-highlight">Flex item 3</div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   
+
+<script src="index.js"></script>
+
+</body>
+
+
+
+</html>
